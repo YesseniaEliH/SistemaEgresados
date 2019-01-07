@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Sistema Egresados</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+              <div class="container rightYess">
+                <h1 class="letraYess positionRight blanco">Sistema de Seguimiento a los Egresados</h2>
+                <h2 class="letraYess positionRight blanco">de la Escuela de Sistemas y Computación</h2>
+                  <div class="panel panel-default positionRight transparentYess">
+                    <div class="panel-body letraYess azul"><h2>UNIVERSIDAD NACIONAL "DANIEL ALCIDES CARRIÓN"</h2></div>
+                  </div>
+                </div>
+
+            </div>
+        </nav>
+            <!-- /.navbar-header -->
+
+
+        <div id="page-wrapper" class="padding-yess">
+          <div class="container ">
+              <div class="row marginTop">
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <span class="glyphicon glyphicon-lock"></span> Ingreso al Sistema - <strong>ADMINISTRADOR</strong></div>
+                        <div class="panel-body">
+                          <form class="form-horizontal" role="form" name="log" action="checkLogin.php" method="POST">
+                            <div class="form-group">
+                                <label for="inputEmail3" class="col-sm-3 control-label">
+                                    Nombre de Usuario</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="nomusu" class="form-control" id="inputEmail3" placeholder="Nombre de usuario" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputPassword3" class="col-sm-3 control-label">
+                                    Clave</label>
+                                <div class="col-sm-9">
+                                    <input type="password" name="passusu" class="form-control" id="inputPassword3" placeholder="Contraseña" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"/>
+                                            Recordarme
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group last">
+                                <div class="col-sm-offset-3 col-sm-9">
+                                    <button type="submit" class="btn btn-success btn-sm">
+                                        Ingresar</button>
+                                         <button type="reset" class="btn btn-default btn-sm">
+                                        Limpiar</button>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="col-md-2">
+                    <img class="img-responsive"src="img/logopn.png" alt="">
+                  </div>
+                  <div class="col-md-5">
+                      <div class="panel panel-default">
+                          <div class="panel-heading">
+                              <span class="glyphicon glyphicon-lock"></span> Ingreso al Sistema - <strong>EGRESADO</strong></div>
+                          <div class="panel-body">
+                              <form class="form-horizontal" role="form" name="log1" action="checkLogin1.php" method="POST">
+                              <div class="form-group">
+                                  <label for="inputEmail3" class="col-sm-3 control-label">
+                                      Código Matrícula</label>
+                                  <div class="col-sm-9">
+                                      <input type="text" name="codigo_matricula"class="form-control" id="codigo_matricula" placeholder="Código de matrícula" required>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <label for="inputPassword3" class="col-sm-3 control-label">
+                                      Clave</label>
+                                  <div class="col-sm-9">
+                                      <input type="password" name="clave" class="form-control" id="clave" placeholder="Clave" required>
+                                  </div>
+                              </div>
+                              <div class="form-group">
+                                  <div class="col-sm-offset-3 col-sm-9">
+                                      <div class="checkbox">
+                                          <label>
+                                              <input type="checkbox"/>
+                                              Recordarme
+                                          </label>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="form-group last">
+                                  <div class="col-sm-offset-3 col-sm-9">
+                                      <button type="submit" class="btn btn-success btn-sm">
+                                          Ingresar</button>
+                                           <button type="reset" class="btn btn-default btn-sm">
+                                          Limpiar</button>
+                                  </div>
+                              </div>
+                              </form>
+                          </div>
+                          <!-- <div class="panel-footer">
+                              Si no está registrado <a href="form.php">Registrate aqui</a></div> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+        <!-- /#container -->
+
+        </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

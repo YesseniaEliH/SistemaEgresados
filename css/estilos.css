@@ -1,0 +1,16 @@
+.fondo{
+	background: rgba(16,6,78,.8);
+	color: #ffffff;
+}
+
+.linea-izquierda{
+	border-left: solid 3px #d9534f;
+}
+
+.ocultar{
+	display: none;
+}
+
+.verticalYess{
+  margin-top: 3vh;
+}
